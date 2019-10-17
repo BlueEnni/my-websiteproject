@@ -1,0 +1,1 @@
+﻿<a href="index.php?section=startseite">Crack3@BlueEnni</a>	<!-- verlinkung des Crack3 header-punktes mit der index.php?section=startseite datei mit: <a href="index.php?section=startseite">Crack3</a> -->

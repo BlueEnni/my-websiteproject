@@ -1,0 +1,177 @@
+﻿/*Das Html 5 Elemente auch in älteren Browsern als Blockelemente angezeigt werden*/
+
+header,
+nav,
+footer{
+	display: block;
+}
+/*********************************************************************************************/
+
+
+body{
+
+	//background-color: #FE9A2E;									/*hintergrundfarbe des bodys auf orange gesetzt*/
+	font-family: Helvetica, Tahoma, Verdana, Helvetica, Arial, sans-serif;	/*Schriftarten nach reihenfolge -- sollte helvetica nicht verfügbar sein so wird arial verwendet usw.*/
+			
+			
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a0605+0,872602+51,4f1500+75,2d1811+85,750100+100 */
+
+background: rgb(58,6,5); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(58,6,5,1) 0%, rgba(135,38,2,1) 51%, rgba(79,21,0,1) 75%, rgba(45,24,17,1) 85%, rgba(117,1,0,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(58,6,5,1) 0%,rgba(135,38,2,1) 51%,rgba(79,21,0,1) 75%,rgba(45,24,17,1) 85%,rgba(117,1,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(58,6,5,1) 0%,rgba(135,38,2,1) 51%,rgba(79,21,0,1) 75%,rgba(45,24,17,1) 85%,rgba(117,1,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a0605', endColorstr='#750100',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+
+
+/*Wrapper kann auch bei responsive layout feste werte haben da es ja nur der container ausenherum ist*/
+
+
+#wrapper{															/* es kann punkt( . ) =bei class oder raute ( # ) =bei id verwendet werden -- hier verwende ich id's deswegen # */
+
+	
+	margin= 0px auto;												/*wrapper mittig angeordnet */
+	//background-color: #1e90ff;									/* hintergrundfarbe des wrapper bereichs(http://www.mediaevent.de/tutorial/farbcodes.html) */
+	width: 100%;													/*maximale breite der website !! wichtig hier max-width anzugeben sonnst nicht responsive */
+	height: 1270px;													/*höhe der website */
+	//margin-top: 20px;												/*abstand des container "Wrapper" nach oben von 20 pixeln*/
+	//padding-top: 20px; 											/*abstand der Elemente zum Rand*/
+	//padding-bottom: 20px;											/*abstand der Elemente zum Rand*/
+	//padding-left: 1%;												/*abstand der Elemente zum Rand*/
+	//padding-right: 1%;											/*abstand der Elemente zum Rand*/
+	
+	
+}
+
+/*kein pedding da der Header ja nicht außerhalb des mindestabstands zum rand vom Wrapper kann*/
+
+header{
+	
+	width: 100%;													/*maximale breite der website !! wichtig hier max-width anzugeben sonnst nicht responsive */
+	height: 24.5%;													/*höhe der website */
+	
+	
+}
+
+
+#header{
+	
+	
+	width: 100%;													/*breite für den header in prozent hier die absolute breite =100% vom Wrapper*/
+	//height: 5%;													/* höhe auf feste 200pixel gestellt */
+	//background-color: #1e90ff;									/*hintergrundfarbe des header */
+	//background-image: url(./images/header.png);					/*hintergrundbild des header */
+	//margin-bottom: 20px;											/* abstand nach unten 10px ( zum darauf folgenden div) */
+	padding-top: 5%;												/*schrift abstand zum oberen rand des header */
+	padding-bottom: 5%;												/*schrift abstand zum unteren rand des header */
+	//padding-left: 20%;											/*schrift abstand zum linken rand des header */
+	//padding-right: 20%;											/*schrift abstand zum rechten rand des header */
+	text-align: center;												/*anordnung des textes mittig*/	
+	font-weight: bold;												/*schrift immer fett*/
+	font-size: 300%;												/*schriftgröße*/
+	//text-shadow: 0px 0px 5px;										/*das die unterstriche bei den links weggehen*/	
+	//display: block;												/*als block anzeigen*/
+	
+	
+}
+
+#header a{
+	
+	color: #e0ffff;													/*schriftfarbe*/
+	text-decoration: none;											/*das die unterstriche bei den links weggehen*/
+}
+
+
+main{ 
+
+	width: 75%;														/*breite für den content auf 77% gestellt so dass danneben ein menue passt und es flexibel bei der größenveränderung ist*/
+	height: 72%;													/* höhe auf feste 72% gestellt */
+	background-color: #75b090;										/*hintergrundfarbe des header */
+	float: right;													/* nach rechts angeornet*/
+	//margin-bottom: 20px;											/* abstand nach unten 10px ( zum darauf folgenden div) */
+	margin-left: 	2%;												/*abstand zum nav 2%*/
+	padding-top: 	2%;												/*abstand zum oberen rand des contentbereichs ist 2% */
+	padding-left: 	2%;												/*abstand zum linken rand des contentbereichs ist 2% */
+	padding-right: 	2%;												/*abstand zum rechten rand des contentbereichs ist 2% */
+	padding-bottom: 2%;												/*abstand zum unteren rand des contentbereichs ist 2% */
+	}
+
+main article {
+	
+	border-bottom: 1px dotted #CFCFCF;								/* Umrandeteter Boden/Abgrenzung -- dotted= gepunkted mit 1px dicke*/
+	
+}
+
+main h1{
+	
+	color: #B45F04;													/*alle h1 Überschriften in content haben diese Farbe*/
+	
+}
+	
+nav{
+		width: 15%;													/*breite des menües bei 15% - so dass 3% freiraum ist und die elemente nicht aneinander kleben*/
+		height: 72%;												/*identische höhe wie content*/
+		background-color: #708090; 									/*Hintergrundfarbe des Menüs*/
+		float: left;												/*nach links angeordnet*/
+		padding-top: 2%;											/*abstand zum oberen rand des navbereichs ist 2% */
+		padding-bottom: 2%;											/*abstand zum unteren rand des navbereichs ist 2% */
+		padding-left: 2%;											/*abstand zum linken rand des navbereichs ist 2% */
+		padding-right: 2%;											/*abstand zum rechten rand des navbereichs ist 2% */
+		text-transform: uppercase; 									/*schrift immer großbuchstaben*/
+		font-weight: bold;											/*schrift immer fett*/
+		font-family: Trebuchet MS, Arial, Helvetica, sans-serif;	/*Schriftart*/
+}
+
+
+
+
+nav ul {																/*nur navbereiche mit den kürzeln ul werden hier behandelt /definiert*/
+	
+	//margin: 0px;													/*keinen abstand zum rand von nav*/
+	//padding: 0px;													/*abstand der eingefügten Bereiche / Schriften zum Rand*/
+	float: none;													/*elemente im zentrum angeordnet*/
+}
+
+
+nav ul li {																/*nur navbereiche mit den kürzeln ul und li werden hier behandelt /definiert*/
+	
+	list-style-type: none;											/*listentyp*/
+}
+
+
+nav ul li a{															/*nur navbereiche mit den kürzeln ul, li und a werden hier behandelt /definiert*/
+	background-color: #FE9A2E;										/*hintergrundfarbe der menüpunkteblocks*/
+	height: 5%;														/*höhe der Menüe punkte*/
+	width: 80%;														/*breite der Menüe punkte*/
+	display: block;													/*anzeige nur block*/
+	text-decoration: none;											/*das die unterstriche bei den links weggehen*/
+	text-align: center;												/*anordnung des textes mittig*/
+	margin-top: 2%;													/*abstand des zum nächsten menüepunkt*/
+	padding-top: 7%;												/*abstand der schrift zum oberen rand der menü kästchen(orange)*/
+	font-size: 120%;												/*schrift-größe*/
+	color: #000000;													/*schriftfarbe*/
+}
+
+footer{
+	
+	clear: both;													/* aufheben der floats (right left) - da footer ganz unten steht bekommt er alle float ausrichtungen die vor ihm sind ab --> standardausrichtung ist von oben nach unten*/
+	width: 100%;													/*breite für den footer in prozent hioer die absolute breite =100%*/
+	height: 10%;													/* höhe auf feste 50pixel gestellt */
+	//background-color: #7f9090;									/*hintergrundfarbe des header */
+	text-align: center;												/*anordnung des textes mittig*/	
+	font-size: 12px;												/*schriftgröße*/
+	color: #FFFFFF;													/*schriftfarbe*/
+	padding-top: 2%;												/*abstand des testes zum oberen rand*/
+}
+
+
+.shadow{															/*klasse schatten: erste pixelzahl ist versatz nach links, zweite ist versatz nach oben, dritte ist unschärfe vom schatten, vierte ist schatten radius -- bei nur drei angaben wird die dritte weg gelassen (=unsch�rfe)*/
+	
+	-webkit-box-shadow: 0px 0px 5px #000 ;							/*schatten für web-kit-browser - chrome,safari*/
+	-moz-box-shadow: 0px 0px 5px #000;								/*schatten für moz-browser - firefox*/
+	box-shadow: 0px 0px 5px #000;									/*schatten für browser die den befehl box-shaddow verwenden*/
+	
+}
